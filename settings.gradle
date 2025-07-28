@@ -1,2 +1,4 @@
 rootProject.name = 'jiter'
+include 'primitive'
+include 'indexable'
 
