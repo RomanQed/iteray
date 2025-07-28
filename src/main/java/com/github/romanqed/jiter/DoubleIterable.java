@@ -1,4 +1,4 @@
-package com.github.romanqed.iteray;
+package com.github.romanqed.jiter;
 
 import java.util.PrimitiveIterator;
 import java.util.Spliterator;

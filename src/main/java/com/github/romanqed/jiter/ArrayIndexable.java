@@ -1,4 +1,4 @@
-package com.github.romanqed.iteray;
+package com.github.romanqed.jiter;
 
 /**
  * A boxed {@link Indexable} wrapper over a reference array.

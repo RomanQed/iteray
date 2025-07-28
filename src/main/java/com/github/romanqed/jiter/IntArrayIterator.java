@@ -1,28 +1,28 @@
-package com.github.romanqed.iteray;
+package com.github.romanqed.jiter;
 
 import java.util.NoSuchElementException;
 import java.util.PrimitiveIterator;
 import java.util.function.Consumer;
-import java.util.function.DoubleConsumer;
+import java.util.function.IntConsumer;
 
 /**
- * A primitive {@link PrimitiveIterator.OfDouble} implementation over a subrange of a {@code double[]} array.
+ * A primitive {@link PrimitiveIterator.OfInt} implementation over a subrange of an {@code int[]} array.
  * <p>
  * Immutable and non-thread-safe.
  */
-public final class DoubleArrayIterator implements PrimitiveIterator.OfDouble {
-    private final double[] array;
+public final class IntArrayIterator implements PrimitiveIterator.OfInt {
+    private final int[] array;
     private final int end;
     private int index;
 
     /**
-     * Constructs a new iterator over a {@code double[]} from {@code index} (inclusive) to {@code end} (exclusive).
+     * Constructs a new iterator over an {@code int[]} from {@code index} (inclusive) to {@code end} (exclusive).
      *
      * @param array the source array
      * @param end   the end index (exclusive)
      * @param index the starting index (inclusive)
      */
-    public DoubleArrayIterator(double[] array, int end, int index) {
+    public IntArrayIterator(int[] array, int end, int index) {
         this.array = array;
         this.end = end;
         this.index = index;
@@ -34,7 +34,7 @@ public final class DoubleArrayIterator implements PrimitiveIterator.OfDouble {
     }
 
     @Override
-    public double nextDouble() {
+    public int nextInt() {
         if (index >= end) {
             throw new NoSuchElementException();
         }
@@ -42,7 +42,7 @@ public final class DoubleArrayIterator implements PrimitiveIterator.OfDouble {
     }
 
     @Override
-    public Double next() {
+    public Integer next() {
         if (index >= end) {
             throw new NoSuchElementException();
         }
@@ -55,14 +55,14 @@ public final class DoubleArrayIterator implements PrimitiveIterator.OfDouble {
     }
 
     @Override
-    public void forEachRemaining(DoubleConsumer action) {
+    public void forEachRemaining(IntConsumer action) {
         while (index < end) {
             action.accept(array[index++]);
         }
     }
 
     @Override
-    public void forEachRemaining(Consumer<? super Double> action) {
+    public void forEachRemaining(Consumer<? super Integer> action) {
         while (index < end) {
             action.accept(array[index++]);
         }

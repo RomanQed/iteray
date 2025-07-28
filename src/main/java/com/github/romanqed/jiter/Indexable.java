@@ -1,4 +1,4 @@
-package com.github.romanqed.iteray;
+package com.github.romanqed.jiter;
 
 /**
  * Represents a generic indexed data structure supporting random access and mutation.

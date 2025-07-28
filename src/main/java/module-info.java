@@ -1,4 +1,4 @@
-module com.github.romanqed.iteray {
+module com.github.romanqed.jiter {
     // Exports
-    exports com.github.romanqed.iteray;
+    exports com.github.romanqed.jiter;
 }
