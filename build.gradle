@@ -16,7 +16,7 @@ java {
 }
 
 group = 'com.github.romanqed'
-archivesBaseName = 'jiter'
+archivesBaseName = 'jiter-array'
 version = System.getenv('JITER_VERSION') ?: '1.0.0'
 
 repositories {
