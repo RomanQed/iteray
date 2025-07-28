@@ -42,6 +42,6 @@ public final class ArrayIterable<T> implements Iterable<T> {
 
     @Override
     public Spliterator<T> spliterator() {
-        return Spliterators.spliterator(array, start, end, Spliterator.SIZED | Spliterator.IMMUTABLE);
+        return Spliterators.spliterator(array, start, end, Spliterator.IMMUTABLE);
     }
 }
