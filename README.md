@@ -1,6 +1,10 @@
 # jiter
 Lightweight utility for efficient, immutable iteration over Java arrays with slicing support.
 
+[![jiter-array](https://img.shields.io/maven-central/v/com.github.romanqed/jiter-array?strategy=releaseProperty&style=for-the-badge&label=jiter-array&color=blue)](https://repo1.maven.org/maven2/com/github/romanqed/jiter-array)
+[![jiter-index](https://img.shields.io/maven-central/v/com.github.romanqed/jiter-index?strategy=releaseProperty&style=for-the-badge&label=jiter-index&color=blue)](https://repo1.maven.org/maven2/com/github/romanqed/jiter-index)
+[![jiter-primitive](https://img.shields.io/maven-central/v/com.github.romanqed/jiter-primitive?strategy=releaseProperty&style=for-the-badge&label=jiter-primitive&color=blue)](https://repo1.maven.org/maven2/com/github/romanqed/jiter-primitive)
+
 
 ## Overview
 
